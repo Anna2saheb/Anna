@@ -17,7 +17,7 @@ permissions:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: annatest/trial
+  IMAGE_NAME: annasahebpatil/trial
 
 jobs:
   python-build:
