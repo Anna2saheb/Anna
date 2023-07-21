@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Annatestaks
+  namespace: namespace-workflow-1689922556966
+spec:
+  type: LoadBalancer
+  selector:
+    app: Annatestaks
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
