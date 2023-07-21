@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Annatestaks
+  labels:
+    app: Annatestaks
+  namespace: namespace-workflow-1689922556966
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Annatestaks
+  template:
+    metadata:
+      labels:
+        app: Annatestaks
+    spec:
+      containers:
+        - name: Annatestaks
+          image: annatest.azurecr.io/image-workflow-1689922556966:latest
+          ports:
+            - containerPort: 8000
