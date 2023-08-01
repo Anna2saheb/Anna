@@ -24,9 +24,9 @@ jobs:
       - name: Azure login
         uses: azure/login@v1.4.6
         with:
-          client-id: "${{ 06a18ffc-4e3d-4ae2-a3d5-1aadb1f87c07 }}"
-          tenant-id: "${{ 72f988bf-86f1-41af-91ab-2d7cd011db47 }}"
-          subscription-id: "${{ feb5b95d-1a28-4f85-822a-9dfc3f4937aeD }}"
+          client_id: "${{ 06a18ffc-4e3d-4ae2-a3d5-1aadb1f87c07 }}"
+          abcd: "${{ 72f988bf-86f1-41af-91ab-2d7cd011db47 }}"
+          subscription_id: "${{ feb5b95d-1a28-4f85-822a-9dfc3f4937aeD }}"
 
       # Build and push the Docker image to ACR
       - name: Build and push image to ACR
