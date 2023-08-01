@@ -56,8 +56,8 @@ jobs:
         uses: azure/docker-login@v1
         with:
           login-server: ${{ env.REGISTRY }}
-          username: ${{ secrets.ACR_USERNAME }}
-          password: ${{ secrets.ACR_PASSWORD }}
+          username: ${{ annregistry }}
+          password: ${{ E0kp6gunyZmXJvX0hQA33aJnXfESzXVWTS/Ive50UL+ACRCiFjVG }}
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
